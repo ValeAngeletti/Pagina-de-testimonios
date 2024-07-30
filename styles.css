@@ -1,11 +1,42 @@
 body{
     font-family: Sora;
+    max-width: 1136px;
+    padding: 10.125rem 5rem;
+    display: flex;
+}
+
+.titulo{
+    font-size: 2.25rem;
+    padding: 1rem 0 0.75rem 0;
+}
+
+.texto_principal{
+    font-size: 1.25rem;
+    line-height: 2;
+    padding: 0 6rem 2rem 0;
+    color: #52525A;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.75rem;
+}
+
+.texto_lista{
+    font-size: 0.875rem;
+    color: #52525A;
+    padding-left: 0.5rem;
 }
 
 .estrella{
-    background-color: blue;
+    background-color: #F5C044;
+    width: 1.5rem;
+    height: auto;
+    padding: 0.8rem;
+    border-radius: 50%;
 }
 
-.estrellas{
-    color: blueviolet;
+.div_testimonio{
+    font-size: 1rem;
 }
