@@ -1,8 +1,13 @@
 body{
     font-family: Sora;
-    max-width: 1136px;
+    max-width: 1200px;
     padding: 10.125rem 5rem;
     display: flex;
+    background-color: #FAFAF9;
+}
+
+.introduccion{
+    flex: 1;
 }
 
 .titulo{
@@ -13,7 +18,7 @@ body{
 .texto_principal{
     font-size: 1.25rem;
     line-height: 2;
-    padding: 0 6rem 2rem 0;
+    padding: 0 3rem 2rem 0;
     color: #52525A;
 }
 
@@ -23,10 +28,32 @@ li{
     padding-bottom: 0.75rem;
 }
 
+.item{
+    width: 24px;
+}
+
 .texto_lista{
     font-size: 0.875rem;
     color: #52525A;
     padding-left: 0.5rem;
+}
+
+.testimonios{
+   display: flex; 
+   flex-direction: column;
+   flex: 1;
+}
+
+.testi_1{
+    align-self: flex-start;
+    margin-left: auto;
+
+}
+
+.testi_2{
+    align-self: flex-end;
+    margin: auto auto 1rem 0;
+
 }
 
 .estrella{
@@ -38,5 +65,76 @@ li{
 }
 
 .div_testimonio{
+    width: 22.3245rem;
     font-size: 1rem;
+    padding: 1.75rem 0 1.75rem 2.5rem;
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 4px #D4D4D8;
+    backdrop-filter: blur(10px);
+    border: none;
+}
+
+.logo_estrellas{
+    align-items: center;
+    display: flex;
+}
+
+.logo_testi{
+    width: 6rem;
+    padding-right: 1.25rem;
+}
+
+.estrellas{
+    padding-right: 0.25rem;
+}
+
+.nombre{
+    font-weight: 700;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.testimonio{
+    color: #52525A;
+    line-height: 2;
+    padding-right: 5rem;
+}
+
+@media (max-width:1000px){
+    body{
+        flex-direction: column;
+    }
+
+    .testi_2{
+        margin-top: 2rem;
+    }
+
+    .introduccion{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:640px){
+    body{
+        padding-left: 2rem;
+    }
+
+}
+
+@media (max-width:560px){
+
+    .testi_1, .testi_2{
+        align-self: center;
+        margin: 1rem 0 0 2rem;
+    }
+
+    .item{
+        width: 24px;
+    }
+}
+
+@media (max-width:440px){
+    .div_testimonio{
+        width: 20rem;
+    }
 }
