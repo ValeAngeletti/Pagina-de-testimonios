@@ -29,7 +29,8 @@ li{
 }
 
 .item{
-    width: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .texto_lista{
@@ -128,13 +129,50 @@ li{
         margin: 1rem 0 0 2rem;
     }
 
-    .item{
-        width: 24px;
+    li{
+        align-items: flex-start;
     }
+
+    .item{
+        width: 1.5rem;
+        height: 1.5rem;
+        flex: 1;
+    }
+
+    .texto_lista{
+        flex: 10;
+    }
+
 }
 
 @media (max-width:440px){
     .div_testimonio{
         width: 20rem;
+    }
+
+    .item_lista{
+        width: 100%;
+    }
+}
+
+@media (max-width:320px){
+
+    .introduccion{
+        text-align: center;
+        padding-left: 2rem;
+    }
+
+    .testimonios{
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    .div_testimonio{
+        width: 15rem;
+    }
+
+    .texto_principal{
+        text-align: center;
+        padding-right: 0;
     }
 }
